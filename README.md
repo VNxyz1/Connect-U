@@ -2,8 +2,8 @@
   <a href="https://connect-u.site/" target="blank"><img src=".github/logo_full_dark.svg" width="400" alt="Connect-U Logo" /></a>
 </p>
 
-<br>
-<br>
+<p align="center">Event planning made easy ‒ for private meetups or public events. <br/> Plan, Share, Connect.</p>
+
 
 <p align="center">
   <a href="https://angular.dev/" target="_blank"><img src="https://img.shields.io/badge/Angular-%23DD0031.svg?logo=angular&logoColor=white"/></a>
