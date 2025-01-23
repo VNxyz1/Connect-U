@@ -21,6 +21,9 @@
   <a href="https://prettier.io/" target="_blank"><img src="https://img.shields.io/badge/prettier-1A2C34?logo=prettier&logoColor=F7BA3E"/></a>
   <a href="https://jwt.io/" target="_blank"><img src="https://img.shields.io/badge/JWT-000000?logo=JSON%20web%20tokens&logoColor=white"/></a>
   <a href="#" target="_blank"><img src="https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=fff"/></a>
+  <a href="https://www.postgresql.org/" target="_blank"><img src="https://img.shields.io/badge/postgres-%23316192.svg?logo=postgresql&logoColor=white"/></a>
+  <a href="https://www.sqlite.org/" target="_blank"><img src="https://img.shields.io/badge/sqlite-%2307405e.svg?logo=sqlite&logoColor=white"/></a>
+  <a href="https://docs.github.com/de/actions" target="_blank"><img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?logo=githubactions&logoColor=white"/></a>
   <a href="https://connect-u.site/" target="_blank"><img src="https://img.shields.io/website-up-down-green-red/http/argo.connect-u.site.svg"/></a>
   <a href="https://dev.connect-u.site/" target="_blank"><img src="https://img.shields.io/website-up-down-green-red/http/argo.connect-u.site.svg?label=Dev%20Server"/></a>
   <a href="https://dev.connect-u.site/api/docs" target="_blank"><img src="https://img.shields.io/website-up-down-green-red/http/argo.connect-u.site.svg?label=OpenAPI%20Docs"/></a>
