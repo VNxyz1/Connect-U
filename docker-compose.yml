@@ -1,0 +1,49 @@
+services:
+  frontend:
+    image: ghcr.io/vnxyz1/connect-u-frontend:latest
+    restart: always
+    ports:
+      - "4000:4000"
+    networks:
+      - intern
+
+  backend:
+    image: ghcr.io/vnxyz1/connect-u-backend:latest
+    restart: always
+    environment:
+      API_PORT: 3000
+      API_PREFIX: /
+      API_CORS: "true"
+      SWAGGER_ENABLE: 1
+      DATABASE_TYPE: sqlite
+      DATABASE_DATABASENAME: ./_sqliteDb/dev.sqlite
+      DATABASE_SYNCHRONIZE: "true"
+      POPULATE_DB: "true"
+      DESIRED_USERS: 20
+      DESIRED_EVENTS: 100
+      JWT_SECRET: thisIsAnExampleSecrete2ebb3be7d85a3bb1b976bd2906e1c9454731ab755f695b7c2e62ffdb3f64c66299006b5090e27ccf083a946fd2bda2cc28b252e751ff533c2fd075263961e39ccd18cbaaa476a0ad375fccc169a5d699b3b35d62a066d0e3f1f1e414cc116b745acc334aa44b6e5ebbe24b8fb3d2b72f09b785c3ebb827cc7192861a8ae04dc5103dc2e6e47e648d66820910f714cb62b13609cf1d23a2dafa260422d6c5d3a23855e2ef05da2e50f12bbc8054ef73bff69895975a774e79c86d676c67e5f5590439099502dd4fb76919c4de5283f9f7c0e86234611120862927097de1ae32f1c7f386c2f265130d4ed07a5dba48634483d6375e6f2aae9b6ea765b5bf92571
+    ports:
+      - "3000:3000"
+    networks:
+      - intern
+
+
+  proxy:
+    image: nginx:1.25.3-alpine
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - intern
+
+
+networks:
+  intern:
+    driver: bridge
+

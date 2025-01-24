@@ -38,7 +38,30 @@ Visit our [Wiki](https://github.com/VNxyz1/Connect-U/wiki) for detailed informat
 
 Each repository also provides its own README with setup and build guides, ensuring you have everything you need to get started quickly.
 
-If you only want to run the project locally, you can use the `docker-compose.yaml` file in this repository. Please note that it uses an SQLite database inside the backend container, so any data will be stored only in a local file and is not ideal for production environments. The file already sets some environment variables to populate the database with test data using [fakerjs](https://fakerjs.dev/). You can tourn this off, by setting PUPULATE_DB to "false".
+### Quickstart with Docker Compose
+If you only want to run the project locally, you can clone this repository and use the `docker-compose.yaml` file. Access the frontend on `localhost:80`. Please note that this setup uses an SQLite database inside the backend container, so any data will be stored only in a local file and is not ideal for production environments. The file already sets some environment variables to populate the database with test data using [fakerjs](https://fakerjs.dev/). You can tourn this off, by setting PUPULATE_DB to "false".
+
+```bash
+# get started
+git clone git@github.com:VNxyz1/Connect-U.git
+cd Connect-U
+docker compose up -d --build --pull always
+```
+
+
+If you populate the database with testdata an accessible user will be created for you.
+```
+# e-mail
+test@gmail.com
+
+# password
+Passwort1234
+```
+
+```bash
+# stop the project using
+docker compose down
+```
 
 ### Frontend
 [GitHub Repository](https://github.com/VNxyz1/Connect-U-Frontend)
