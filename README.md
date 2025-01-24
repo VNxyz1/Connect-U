@@ -32,6 +32,13 @@
   <a href="https://github.com/VNxyz1/Connect-U-Backend/pkgs/container/connect-u-backend" target="_blank"><img src="https://img.shields.io/badge/Docker%20images%20backend-2496ED?logo=docker&logoColor=fff"/></a>
 </p>
 
+## Website access
+
+| Website                                                   | User       | Password       |
+|-----------------------------------------------------------|------------|----------------|
+| [https://connect-u.site](https://connect-u.site/)         | production | productionPass |
+| [https://dev.connect-u.site](https://dev.connect-u.site/) | developer  | t2T7jo4fW3     |
+
 
 ## About the Project
 Visit our [Wiki](https://github.com/VNxyz1/Connect-U/wiki) for detailed information on this Project.
