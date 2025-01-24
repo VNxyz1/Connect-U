@@ -33,12 +33,18 @@
 </p>
 
 
+## About the Project
+Visit our [Wiki](https://github.com/VNxyz1/Connect-U/wiki) for detailed information on this Project.
 
-## Frontend
+Each repository also provides its own README with setup and build guides, ensuring you have everything you need to get started quickly.
+
+If you only want to run the project locally, you can use the `docker-compose.yaml` file in this repository. Please note that it uses an SQLite database inside the backend container, so any data will be stored only in a local file and is not ideal for production environments. The file already sets some environment variables to populate the database with test data using [fakerjs](https://fakerjs.dev/). You can tourn this off, by setting PUPULATE_DB to "false".
+
+### Frontend
 [GitHub Repository](https://github.com/VNxyz1/Connect-U-Frontend)
 
-## Backend
+### Backend
 [GitHub Repository](https://github.com/VNxyz1/Connect-U-Backend)
 
-## Declarative Deployment
+### Declarative Deployment
 [GitHub Repository](https://github.com/VNxyz1/connect-u-deployment)
